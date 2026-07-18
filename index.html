@@ -3,96 +3,93 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Fashion Zone</title>
 
 <style>
 body{
-font-family:Arial,sans-serif;
-margin:0;
-background:#f8f8f8;
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f8f8f8;
 }
 
 header{
-background:#ff4081;
-color:white;
-padding:20px;
-text-align:center;
-font-size:30px;
-font-weight:bold;
+    background:#ff4081;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
 
-.banner{
-background:#ffe4ec;
-padding:30px;
-text-align:center;
-}
-
-.banner h2{
-color:#ff4081;
+h1{
+    margin:0;
 }
 
 .products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-padding:20px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
 }
 
 .card{
-background:white;
-padding:15px;
-border-radius:10px;
-box-shadow:0 2px 8px rgba(0,0,0,0.2);
-text-align:center;
+    background:white;
+    width:220px;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 0 10px #ccc;
 }
 
 .card img{
-width:100%;
-border-radius:10px;
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
 }
 
-.btn{
-display:inline-block;
-background:#ff4081;
-color:white;
-padding:10px 20px;
-text-decoration:none;
-border-radius:5px;
-margin-top:10px;
+button{
+    background:#ff4081;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
 }
 </style>
+
 </head>
 
 <body>
 
-<header>Fashion Zone</header>
+<header>
+<h1>Fashion Zone</h1>
+<p>Latest Fashion Collection</p>
+</header>
 
-<div class="banner">
-<h2>Latest Fashion Collection</h2>
-<p>Best Products at Best Price</p>
-</div>
 
 <div class="products">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=500" alt="T-Shirt">
-<h3>Stylish T-Shirt</h3>
-<p>₹499</p>
-<a class="btn" href="https://www.meesho.com/af_invite/492986529:instagram_stories:6340321?p_id=940727464&ext_id=fk31yg&utm_source=instagram_stories">Buy Now</a>
+<img src="https://via.placeholder.com/220x250" alt="Kurti">
+<h3>Stylish Kurti</h3>
+<p>₹699</p>
+<button>Buy Now</button>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=500" alt="Jeans">
-<h3>Blue Jeans</h3>
-<p>₹799</p>
-<a class="btn" href="https://www.meesho.com/af_invite/492986529:instagram_stories:6340321?p_id=940727464&ext_id=fk31yg&utm_source=instagram_stories">Buy Now</a>
-</div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=500" alt="Dress">
-<h3>Fashion Dress</h3>
+<img src="https://via.placeholder.com/220x250" alt="Saree">
+<h3>Beautiful Saree</h3>
 <p>₹999</p>
-<a class="btn" href="https://www.meesho.com/af_invite/492986529:instagram_stories:6340321?p_id=940727464&ext_id=fk31yg&utm_source=instagram_stories">Buy Now</a>
+<button>Buy Now</button>
+</div>
+
+
+<div class="card">
+<img src="https://via.placeholder.com/220x250" alt="Handbag">
+<h3>Fashion Handbag</h3>
+<p>₹499</p>
+<button>Buy Now</button>
 </div>
 
 </div>
